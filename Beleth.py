@@ -95,7 +95,7 @@ def usage():
 	-h : help
 	-s : server ip
 	-p : port default 80
-	-t : turbo default 135 \033[94m''')
+	-t : turbo default 135 \033[0m''')
 	sys.exit()
 
 
