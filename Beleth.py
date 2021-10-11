@@ -91,10 +91,11 @@ def usage():
 	É responsabilidade do usuário respeitar as leis.
 	Lembre- seu IP é visível. \n
 	usage : python3 beleth.py [-s] [-p] [-t]
+        ----------------------------------------------
 	-h : help
 	-s : server ip
 	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	-t : turbo default 135 \033[94m''')
 	sys.exit()
 
 
