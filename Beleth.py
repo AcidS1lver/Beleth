@@ -73,21 +73,7 @@ def dos2():
 
 
 def usage():
-        print (''' \033[31m .__....._             _.....__,
-            .": o :':         ;': o :".
-            `. `-' .'.       .'. `-' .'
-              `---'             `---'
-
-    _...----...      ...   ...      ...----..._
- .-'__..-""'----    `.  `"`  .'    ----'""-..__`-.
-'.-'   _.--"""'       `-._.-'       '"""--._   `-.`
-'  .-"'                  :                  `"-.  `
-  '   `.              _.'"'._              .'   `
-        `.       ,.-'"       "'-.,       .'
-          `.                           .'
-            `-._                   _.-'
-                `"'--...___...--'"` \033[0m''')
-	print (''' \033[31m	Beleth DoS alpha 0.1 
+        print (''' \033[31m	Beleth DoS alpha 0.1 
 	É responsabilidade do usuário respeitar as leis.
 	Lembre- seu IP é visível. \n
 	usage : python3 beleth.py [-s] [-p] [-t]
